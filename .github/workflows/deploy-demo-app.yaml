@@ -46,7 +46,7 @@ jobs:
       - name: Deploy easyTrade
         run: |
           # Apply the release manifests specifically to the easytrade namespace
-          kubectl -n easytrade apply -f kubernetes/sample-app
+          kubectl -n easytrade apply -f kubernetes/
 
       - name: Check Deployment Status
         run: |
