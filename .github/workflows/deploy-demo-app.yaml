@@ -28,7 +28,7 @@ jobs:
       # Update kubeconfig for EKS
       - name: Point to Cluster
         run: |
-          aws eks update-kubeconfig --name demo-dev-cluster--region ap-southeast-1
+          aws eks update-kubeconfig --name demo-dev-cluster --region ap-southeast-1
 
       # Verify cluster access
       - name: Verify cluster access
